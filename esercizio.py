@@ -1,4 +1,4 @@
-    import math
+import math
 
 def calcola_perimetro():
     while True: #Questo comando instaura un ciclo che termina quando l'utente non decide di uscire
