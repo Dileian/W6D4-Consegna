@@ -1,12 +1,14 @@
 import math
 
 def calcola_perimetro():
-    print("Di quale figura vuoi calcolare il perimetro?")
-    print("1. Quadrato")
-    print("2. Cerchio")
-    print("3. Rettangolo")
+    while True: #Questo comando instaura un ciclo che termina quando l'utente non decide di uscire
+        print("Di quale figura vuoi calcolare il perimetro?")
+        print("1. Quadrato")
+        print("2. Cerchio")
+        print("3. Rettangolo")
+        print ("4. Esci dal programma") #Aggiungo una opzione per uscire al fine di interrompere il ciclo attivo
     
-    scelta= input ("Digita il numero della figura che hai scelto:")
+    scelta= input ("Digita il numero della figura che hai scelto oppure puoi uscire:")
     
     if scelta == "1":
         lato = float (input("Inserisci la misura del lato del quadrato:"))
@@ -24,6 +26,10 @@ def calcola_perimetro():
         perimetro = float (base*2 + altezza*2)
         print(f"Il perimetro del rettangolo che abbiamo calcolato è: {perimetro:.2f}")       
 
+    elif scelta == "4" 
+        print("Grazie per aver scelto il nostro programma! Alla prossima)
+        break #Serve per interrompere il ciclo while iniziato
+              
     else:
         print("Questa scelta non è valida. Inserisci un valore numerico e riprova.")
     
